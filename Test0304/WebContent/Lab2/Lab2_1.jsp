@@ -16,15 +16,7 @@ p {
 font-size: 25px;
 color: black
 }
-span{
-font-size: 10px;
-color: red 
-}
-div.total {
-text-align: right;
-font-size: 20px;
-color: blue 
-}
+
 </style>
 <title>Lab2_1</title>
 </head>
