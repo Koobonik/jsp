@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
 pageEncoding
-="EUC-KR"%>
-<h3>201504003 ±∏∫ª¿Õ</h3>
+="UTF-8"%>
+<h3>201504003 Íµ¨Î≥∏Ïùµ</h3>
 <hr>

@@ -1,5 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%request.setCharacterEncoding("UTF-8");%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,23 +9,22 @@
 <body>
 <br>
 <br>
-<!-- post·Î Àü¼Û¹ÞÀº °ªÀ»Àº ¹Ø¿¡ ¸í·É¾î Ã³·³ ÇØ¼­ ¹Þ´Â´Ù -->
+<!-- postë¡œ ì „ì†¡ë°›ì€ ê°’ì„ì€ ë°‘ì— ëª…ë ¹ì–´ ì²˜ëŸ¼ í•´ì„œ ë°›ëŠ”ë‹¤ -->
 
 <%=request.getParameter("wf")%>
-
+<% String hello = request.getParameter("wf"); %>
 <%
-String hello = request.getParameter("wf");
 String w = "while";
 String f = "for";
-out.print(hello);out.print(hello);out.print(hello);
-if ( hello == w || hello == f) {
+out.println(hello);
+if ( hello.equals(w) || hello.equals(f)) {
 
-	out.println("ÀÌ¸§ : "+request.getParameter("name"));
+	out.println("ì´ë¦„ : "+request.getParameter("name"));
 
-	out.println("ÇÐ¹ø : "+ request.getParameter("stuid"));
+	out.println("í•™ë²ˆ : "+ request.getParameter("stuid"));
 	
-	if (request.getParameter("wf") == "while"){
-		out.println("while¹® ¼±ÅÃ!");
+	if (hello.equals(w)){
+		out.println("whileë¬¸ ì„ íƒ!");
 		int i = 0;
 		while (i < Integer.parseInt(request.getParameter("count")) ){
 			out.println(request.getParameter("str"));
@@ -32,9 +32,8 @@ if ( hello == w || hello == f) {
 		}
 	}
 	
-	else if ( request.getParameter("wf") == "for"){
-		out.println("for¹® ¼±ÅÃ!");
-
+	else if ( hello.equals(f)){
+		out.println("forë¬¸ ì„ íƒ!");
 		for(int i = 0; i < Integer.parseInt(request.getParameter("count")); i++){
 			out.println(request.getParameter("str"));
 		}
@@ -45,7 +44,7 @@ if ( hello == w || hello == f) {
 
 
 if (request.getParameter("wf") == null) {
-out.print("¶óµð¿À ¹öÆ°À» ¼±ÅÃÇÏÁö ¾ÊÀ¸¼Ì½À´Ï´Ù.");
+out.print("ë¼ë””ì˜¤ ë²„íŠ¼ì„ ì„ íƒí•˜ì§€ ì•Šìœ¼ì…¨ìŠµë‹ˆë‹¤.");
 }
 
 

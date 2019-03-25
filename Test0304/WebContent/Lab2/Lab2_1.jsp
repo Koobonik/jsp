@@ -1,6 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
-<%request.setCharacterEncoding("EUC-KR");%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%request.setCharacterEncoding("UTF-8");%>
 <!DOCTYPE html>
 <%@include file="header.jsp"%>
 <html>
@@ -32,27 +32,27 @@ color: blue
 <div id="container">
 		<hr>
 		<form name="form" id="form" action="Lab2_1_result.jsp" method="post">
-			<p>ÀÌ¸§</p>
+			<p>ì´ë¦„</p>
 			<input type="text" id="name" name="name">
 			
-			<p>ÇÐ¹ø</p>
+			<p>í•™ë²ˆ</p>
 			<input type="number" id="stuid" name="stuid">
 			
 			<br>
 			<br>
 			<label>
-				<input type="radio" name="wf" value="for">while¹®
-				<input type="radio" name="wf" value="while">for¹®
+				<input type="radio" name="wf" value="while">whileë¬¸
+				<input type="radio" name="wf" value="for">forë¬¸
 			</label>
 			
-			<p>ÀÔ·Â È½¼ö</p>
+			<p>ìž…ë ¥ íšŸìˆ˜</p>
 			<input type="number" id="count" name="count">
 			
-			<p>ÀÔ·Â ±ÛÀÚ</p>
+			<p>ìž…ë ¥ ê¸€ìž</p>
 			<input type="text" id="str" name="str">
 			
 			
-			<p> <input type="button" onclick="submit()" value="º¸³»±â">
+			<p> <input type="button" onclick="submit()" value="ë³´ë‚´ê¸°">
 		</form>
 	</div>
 <script type="text/javascript">
