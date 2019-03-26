@@ -5,5 +5,6 @@ pageEncoding="UTF-8"%>
 String pwd = request.getParameter("pwd");
 if (id.equals("test") && pwd.equals("1234"))
 session.setAttribute("id",id);
+//pageContext.forward("Lab2_2.jsp");
 response.sendRedirect("Lab2_2.jsp");
 %>

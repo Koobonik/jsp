@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 <% request.setCharacterEncoding("utf-8"); %>
@@ -30,6 +30,7 @@
 	<input type="radio" name="season" value="summer">여름
 	<input type="radio" name="season" value="fall">가을
 	<input type="radio" name="season" value="winter">겨울
+	<input type="hidden" name="id" value="<%= session.getAttribute("id") %>">
 </label>
 <p> <input type="submit" value="결과보기">
 </form>

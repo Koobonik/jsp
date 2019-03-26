@@ -7,9 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%
-pageContext.include("includepage.jsp");
-%>
+<%=request.getParameter("id") %> 님이 좋아하는 계절은
+<%=request.getParameter("season") %> 입니다.
 <h2></h2>
 </body>
 </html>

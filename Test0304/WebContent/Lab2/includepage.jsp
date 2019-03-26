@@ -8,6 +8,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<%pageContext.forward("includeResult.jsp");%>
 </body>
 </html>
