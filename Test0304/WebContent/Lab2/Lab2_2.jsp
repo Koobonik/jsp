@@ -26,10 +26,10 @@
 <p> * 좋아하는 계절은? </p>
 <form name="form" id="form" action="includepage.jsp" method="post">
 	<label>
-	<input type="radio" name="season" value="spring">봄
-	<input type="radio" name="season" value="summer">여름
-	<input type="radio" name="season" value="fall">가을
-	<input type="radio" name="season" value="winter">겨울
+	<input type="radio" name="season" value="봄">봄
+	<input type="radio" name="season" value="여름">여름
+	<input type="radio" name="season" value="가을">가을
+	<input type="radio" name="season" value="겨울">겨울
 	<input type="hidden" name="id" value="<%= session.getAttribute("id") %>">
 </label>
 <p> <input type="submit" value="결과보기">
